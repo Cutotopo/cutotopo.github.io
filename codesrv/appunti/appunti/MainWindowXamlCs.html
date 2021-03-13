@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>MainWindow.xaml.cs | Cutotopo</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="wiki">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/assets/css/0.styles.a48415b8.css" as="style"><link rel="preload" href="/assets/js/app.a215f208.js" as="script"><link rel="preload" href="/assets/js/2.cae1be6a.js" as="script"><link rel="preload" href="/assets/js/16.703725ff.js" as="script"><link rel="prefetch" href="/assets/js/10.043bd94a.js"><link rel="prefetch" href="/assets/js/11.12ff7b3a.js"><link rel="prefetch" href="/assets/js/12.c90c3eb2.js"><link rel="prefetch" href="/assets/js/13.2107b8fb.js"><link rel="prefetch" href="/assets/js/14.6f80e237.js"><link rel="prefetch" href="/assets/js/15.971ab5ca.js"><link rel="prefetch" href="/assets/js/17.224edf28.js"><link rel="prefetch" href="/assets/js/18.9b299223.js"><link rel="prefetch" href="/assets/js/19.28cd7605.js"><link rel="prefetch" href="/assets/js/20.280e5912.js"><link rel="prefetch" href="/assets/js/21.c74a552c.js"><link rel="prefetch" href="/assets/js/22.b2ecccc5.js"><link rel="prefetch" href="/assets/js/23.e952abc9.js"><link rel="prefetch" href="/assets/js/24.2aa355ba.js"><link rel="prefetch" href="/assets/js/25.8fecdf61.js"><link rel="prefetch" href="/assets/js/26.6f84026f.js"><link rel="prefetch" href="/assets/js/27.e6452bd5.js"><link rel="prefetch" href="/assets/js/28.bb17a133.js"><link rel="prefetch" href="/assets/js/29.f2f149a1.js"><link rel="prefetch" href="/assets/js/3.a537ba19.js"><link rel="prefetch" href="/assets/js/30.4725efb3.js"><link rel="prefetch" href="/assets/js/31.53cbe06f.js"><link rel="prefetch" href="/assets/js/32.77e4480b.js"><link rel="prefetch" href="/assets/js/33.452ba716.js"><link rel="prefetch" href="/assets/js/34.44767ba2.js"><link rel="prefetch" href="/assets/js/35.09f48797.js"><link rel="prefetch" href="/assets/js/36.316f7b25.js"><link rel="prefetch" href="/assets/js/37.e074f66b.js"><link rel="prefetch" href="/assets/js/38.d3688a58.js"><link rel="prefetch" href="/assets/js/39.65e487d8.js"><link rel="prefetch" href="/assets/js/4.5ac57724.js"><link rel="prefetch" href="/assets/js/40.c19c56d1.js"><link rel="prefetch" href="/assets/js/41.851fc2a7.js"><link rel="prefetch" href="/assets/js/42.df2ca21d.js"><link rel="prefetch" href="/assets/js/43.521e5437.js"><link rel="prefetch" href="/assets/js/44.de90252d.js"><link rel="prefetch" href="/assets/js/45.66ebda60.js"><link rel="prefetch" href="/assets/js/46.6203930b.js"><link rel="prefetch" href="/assets/js/47.23d54053.js"><link rel="prefetch" href="/assets/js/48.5b7faae1.js"><link rel="prefetch" href="/assets/js/49.88f33881.js"><link rel="prefetch" href="/assets/js/5.10298cd6.js"><link rel="prefetch" href="/assets/js/50.9fc6d255.js"><link rel="prefetch" href="/assets/js/51.407b65bf.js"><link rel="prefetch" href="/assets/js/52.34ac3707.js"><link rel="prefetch" href="/assets/js/53.0895f35d.js"><link rel="prefetch" href="/assets/js/54.27c872e2.js"><link rel="prefetch" href="/assets/js/55.9499bf80.js"><link rel="prefetch" href="/assets/js/56.8748fb88.js"><link rel="prefetch" href="/assets/js/57.d041eedc.js"><link rel="prefetch" href="/assets/js/58.d6123f7d.js"><link rel="prefetch" href="/assets/js/59.dd236b80.js"><link rel="prefetch" href="/assets/js/6.e21a98c8.js"><link rel="prefetch" href="/assets/js/7.b59947e2.js"><link rel="prefetch" href="/assets/js/8.db62d64a.js"><link rel="prefetch" href="/assets/js/9.6bada0a4.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.a48415b8.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Cutotopo</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/status/" class="nav-link">
+  Status
+</a></div><div class="nav-item"><a href="/my-apps/" class="nav-link">
+  My apps
+</a></div><div class="nav-item"><a href="/scripts/" class="nav-link">
+  Scripts
+</a></div><div class="nav-item"><a href="/codesrv/" class="nav-link router-link-active">
+  Source code
+</a></div><div class="nav-item"><a href="https://twitch.tv/Cutotopo" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Twitch
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://github.com/Cutotopo" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/status/" class="nav-link">
+  Status
+</a></div><div class="nav-item"><a href="/my-apps/" class="nav-link">
+  My apps
+</a></div><div class="nav-item"><a href="/scripts/" class="nav-link">
+  Scripts
+</a></div><div class="nav-item"><a href="/codesrv/" class="nav-link router-link-active">
+  Source code
+</a></div><div class="nav-item"><a href="https://twitch.tv/Cutotopo" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Twitch
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://github.com/Cutotopo" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Source code server</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/codesrv/" aria-current="page" class="sidebar-link">Source code server</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>InkPaint</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Appunti</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/codesrv/appunti/AppuntiSln.html" class="sidebar-link">Appunti.sln</a></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading open"><span>Appunti</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/codesrv/appunti/appunti/AppXaml.html" class="sidebar-link">App.xaml</a></li><li><a href="/codesrv/appunti/appunti/AppXamlCs.html" class="sidebar-link">App.xaml.cs</a></li><li><a href="/codesrv/appunti/appunti/AppuntiCsproj.html" class="sidebar-link">Appunti.csproj</a></li><li><a href="/codesrv/appunti/appunti/MainWindowXaml.html" class="sidebar-link">MainWindow.xaml</a></li><li><a href="/codesrv/appunti/appunti/MainWindowXamlCs.html" aria-current="page" class="active sidebar-link">MainWindow.xaml.cs</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="mainwindow-xaml-cs"><a href="#mainwindow-xaml-cs" class="header-anchor">#</a> MainWindow.xaml.cs</h1> <h3 id="c-file"><a href="#c-file" class="header-anchor">#</a> C# file</h3> <div class="language- extra-class"><pre class="language-text"><code>using metro = Elysium.Controls;
+using Microsoft.Win32;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
+using System.Runtime.InteropServices;
+using System.Diagnostics;
+
+/// &lt;summary&gt;
+/// Appunti
+/// App di Cutotopo
+/// 
+/// github.com/Cutotopo/appunti
+/// Licenza MIT
+/// &lt;/summary&gt;
+
+
+
+namespace APPUNTI
+{
+    /// &lt;summary&gt;
+    /// Interaction logic for MainWindow.xaml
+    /// &lt;/summary&gt;
+    public partial class MainWindow : metro::Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+        }
+
+        protected override void OnClosing(CancelEventArgs e)
+        {
+            if (TextPanel.Text != &quot;&quot;)
+            {
+                if (pathnamebox.Text == &quot;&quot;)
+                {
+                    MessageBoxResult result = MessageBox.Show(&quot;Salvare il contenuto su un file?&quot;, &quot;Warning&quot;, MessageBoxButton.YesNoCancel, MessageBoxImage.Question);
+                    if (result == MessageBoxResult.Cancel)
+                    {
+                        e.Cancel = true;
+                        
+                    }
+                    if (result == MessageBoxResult.Yes)
+                    {
+                        SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+                        saveFileDialog1.Filter = &quot;File appunti|*.fnotes&quot;;
+                        string Text = TextPanel.Text;
+                        if (saveFileDialog1.ShowDialog() == true)
+                        {
+                            TextWriter tw = new StreamWriter(saveFileDialog1.FileName);
+                            tw.Write(Text);
+                            tw.Close();
+                        }
+                        PathName.Content = saveFileDialog1.FileName;
+                        pathnamebox.Text = saveFileDialog1.FileName;
+                        AutoSaveStatusBool.Content = &quot;Sì&quot;;
+                    }
+                    if (result == MessageBoxResult.No)
+                    {
+                        System.Windows.Application.Current.Shutdown();
+                    }
+                }
+            }
+        }
+
+        private void TestoCambiato(object sender, RoutedEventArgs e)
+        {
+            string text2 = &quot; &quot;;
+            text2 = TextPanel.Text;
+            int textLength = text2.Length;
+            /// - - - Metodo alternativo di conteggio delle lettere - - -
+            ///text2.Count(char.IsLetter);
+            ///text2.Split(' ').ToDictionary(n =&gt; n, n =&gt; n.Length);
+            ///text2.Split(' ');
+            ///int text3 = 0;
+            ///text2.Split(' ').Select(n =&gt; new KeyValuePair&lt;string, int&gt;(n, n.Length));
+            ///text3 = text2.Length;
+            ///string Text4 = Convert.ToString(text3);
+            charNum.Content = textLength;
+            string TextWrt = TextPanel.Text;
+            if ((pathnamebox.Text == &quot;&quot;))
+            {
+
+            } else
+            {
+                string PathName2 = Convert.ToString(pathnamebox.Text);
+                TextWriter tw = new StreamWriter(PathName2);
+                tw.Write(TextWrt);
+                tw.Close();
+
+            }
+        }
+
+        private void TopMostTrue(object sender, RoutedEventArgs e)
+        { 
+            if (this.Topmost == true)
+            {
+                this.Topmost = false;
+                TopMostBtn.Content = &quot;Mantieni in primo piano (disattivato)&quot;;
+            }
+            else
+            {
+                this.Topmost = true;
+                TopMostBtn.Content = &quot;Mantieni in primo piano (attivato)&quot;;
+            }
+        }
+
+        private void ExportFile(object sender, RoutedEventArgs e)
+        {
+            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+            saveFileDialog1.Filter = &quot;File appunti|*.fnotes&quot;;
+            string Text = TextPanel.Text;
+            if (saveFileDialog1.ShowDialog() == true)
+            {
+                TextWriter tw = new StreamWriter(saveFileDialog1.FileName);
+                tw.Write(Text);
+                tw.Close();
+            }
+            PathName.Content = saveFileDialog1.FileName;
+            pathnamebox.Text = saveFileDialog1.FileName;
+            AutoSaveStatusBool.Content = &quot;Sì&quot;;
+        }
+        private void ImportFile(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog openFileDialog1 = new OpenFileDialog();
+            openFileDialog1.Filter = &quot;File appunti|*.fnotes&quot;;
+            if (openFileDialog1.ShowDialog() == true)
+            {
+                TextReader tr = new StreamReader(openFileDialog1.FileName);
+                string textR = tr.ReadToEnd();
+                string text1 = Convert.ToString(textR);
+                TextPanel.Text = textR;
+
+            }
+            PathName.Content = openFileDialog1.FileName;
+            pathnamebox.Text = openFileDialog1.FileName;
+            AutoSaveStatusBool.Content = &quot;Sì&quot;;
+        }
+
+        private void ViewGit(object sender, RoutedEventArgs e)
+        {
+            string giturl = &quot;https://github.com/CUtotopo/appunti&quot;;
+            LaunchGit(giturl);
+        }
+        private void LaunchGit(string giturl)
+        {
+            try
+            {
+                System.Diagnostics.Process.Start(&quot;https://github.com/Cutotopo/appunti&quot;);
+            }
+            catch
+            {
+                if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+                {
+                    giturl = giturl.Replace(&quot;&amp;&quot;, &quot;^&amp;&quot;);
+                    Process.Start(new ProcessStartInfo(&quot;cmd&quot;, $&quot;/c start {giturl}&quot;) { CreateNoWindow = true });
+                }
+                else if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux))
+                {
+                    Process.Start(&quot;xdg-open&quot;, giturl);
+                }
+                else if (RuntimeInformation.IsOSPlatform(OSPlatform.OSX))
+                {
+                    Process.Start(&quot;open&quot;, giturl);
+                }
+                else
+                {
+                    throw;
+                }
+            }
+        }
+    }
+}
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/codesrv/appunti/appunti/MainWindowXaml.html" class="prev">
+        MainWindow.xaml
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.a215f208.js" defer></script><script src="/assets/js/2.cae1be6a.js" defer></script><script src="/assets/js/16.703725ff.js" defer></script>
+  </body>
+</html>
